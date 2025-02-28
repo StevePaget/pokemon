@@ -14,3 +14,12 @@ for line in f:
 db.commit()
 
 print("Made Database")
+
+c.execute("DROP TABLE IF EXISTS Player")
+c.execute("CREATE TABLE Player (ID INTEGER PRIMARY KEY )")
+
+c.execute("INSERT INTO Player VALUES (23)")
+c.execute("INSERT INTO Player VALUES (123)")
+c.execute("INSERT INTO Player VALUES (87)")
+db.commit()
+
